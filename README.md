@@ -13,4 +13,9 @@ Press q or w for pause and play, respectively. Also, press w to start the game a
 
 Use right and left arrow buttons to move paddle
 
-## Screen-recording of game
+## Screen-shots from game
+
+<img width="803" alt="Screenshot 2025-02-23 at 12 34 44 PM" src="https://github.com/user-attachments/assets/47c995d3-c879-4939-87f0-b08013ac9e46" />
+<img width="795" alt="Screenshot 2025-02-23 at 12 35 27 PM" src="https://github.com/user-attachments/assets/75d09e93-7aa4-4835-a86e-4426404b9440" />
+
+## Screen-recording of game play
