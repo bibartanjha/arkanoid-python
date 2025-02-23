@@ -19,3 +19,4 @@ Use right and left arrow buttons to move paddle
 <img width="795" alt="Screenshot 2025-02-23 at 12 35 27 PM" src="https://github.com/user-attachments/assets/75d09e93-7aa4-4835-a86e-4426404b9440" />
 
 ## Screen-recording of game play
+https://github.com/user-attachments/assets/dbf405aa-053b-4248-89a0-7567ee35071f
