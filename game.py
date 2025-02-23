@@ -11,19 +11,19 @@ paddle.y = 450
 
 DEFAULT_BALL_X = 30
 DEFAULT_BALL_Y = 300
+BALL_X_SPEED_WHEN_MOVING = 3
+BALL_Y_SPEED_WHEN_MOVING = 3
 
 ball = Actor("ballblue.png")
 ball.x = DEFAULT_BALL_X
 ball.y = DEFAULT_BALL_Y
-ball_x_speed = 3
-ball_y_speed = 3
+ball_x_speed = 0
+ball_y_speed = 0
 
 bar = Actor("element_blue_rectangle_glossy.png")
 bar.x = 120
 bar.y = 100
 bars_list = []
-
-game_paused = True
 
 def place_bars(x, y, image):
     bar_x = x
@@ -53,13 +53,13 @@ def draw():
     
 
 def update():
-    global ball_x_speed, ball_y_speed, game_paused
+    global ball_x_speed, ball_y_speed
     if keyboard.q:
-        game_paused = True
+        ball_x_speed = 0
+        ball_y_speed = 0
     if keyboard.w:
-        game_paused = False
-    if (game_paused == True):
-        return
+        ball_x_speed = BALL_X_SPEED_WHEN_MOVING
+        ball_y_speed = BALL_Y_SPEED_WHEN_MOVING
     if keyboard.left:
         paddle.x = paddle.x - 5
     if keyboard.right:
@@ -77,15 +77,15 @@ def update():
         rand = random.randint(0,1)
         if rand:
             ball_x_speed *= -1
-    if (ball.y > paddle.y):
+    if (ball.y > paddle.y): # paddle didn't catch ball
         reset_bar()
 
 def reset_bar():
+    global ball_x_speed, ball_y_speed
+    ball_x_speed = 0
+    ball_y_speed = 0
     ball.x = DEFAULT_BALL_X
     ball.y = DEFAULT_BALL_Y
-    ball_x_speed = 3
-    ball_y_speed = 3
-    game_paused = True
 
 def update_ball():
     # ball.x -= 1 # moves the ball left
