@@ -54,8 +54,10 @@ def draw():
 
 def update():
     global ball_x_speed, ball_y_speed, game_paused
-    if keyboard.space:
-        game_paused = not game_paused
+    if keyboard.q:
+        game_paused = True
+    if keyboard.w:
+        game_paused = False
     if (game_paused == True):
         return
     if keyboard.left:
