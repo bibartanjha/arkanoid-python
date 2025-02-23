@@ -9,9 +9,7 @@ Through this tutorial, I was able to learn the logic behind Arkanoid and also fa
 ## Instructions on running game
 Run `python game.py` to start the game
 
-Press w to start the game
-
-Press q or w for pause and play, respectively 
+Press q or w for pause and play, respectively. Also, press w to start the game and start each new round.
 
 Use right and left arrow buttons to move paddle
 
